@@ -1,0 +1,142 @@
+.imgHotpointManage-imgArea .upload-file-show {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(images/group-bg.gif) transparent;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.imgHotpointManage-imgArea .upload-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.imgHotpointManage-imgArea .image-item img {
+    width: auto;
+}
+
+.imgPartsTable table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.imgPartsTable td,
+.imgPartsTable th {
+    padding: 2px 5px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.imgPartsTable tr.hover {
+    background-color: #FFE4B2;
+}
+
+.imgPartsTable th span {
+    display: block;
+    font-weight: normal;
+}
+
+.imgPartsTable input[type="text"],
+.imgPartsTable input[type="number"],
+.imgPartsTable select {
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    text-align: center;
+    background-color: transparent;
+}
+
+.imgPartsTable input:focus,
+.imgPartsTable select:focus {
+    background-color: #fff;
+}
+
+.imgPartsTable .error {
+    color: red;
+    border: 1px solid red;
+}
+
+.imgPartsTable input.changing {
+    color: #fff;
+    background: #FF8F02;
+}
+
+.imgHotpointManage-imgArea {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgHotpointManage-imgArea .map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.imgHotpointManage-imgArea .map .area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    min-width: 22px;
+    min-height: 22px;
+    line-height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: move;
+    background: #FF8F02;
+    color: #fff;
+    font-size: 11px;
+    padding:0;
+}
+
+.imgHotpointManage-imgArea .area.hover {
+    background: red;
+}
+
+.imgHotpointManage-imgArea .area.moving {
+    z-index: 2;
+}
+
+.imgHotpointManage-title {
+    position: relative;
+}
+
+.imgHotpointManage-title button {
+    float: right;
+    background: #007dff;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.imgHotpointManage-title .saveBtn {
+    background: #007dff;
+}
+
+.imgHotpointManage-title .saveBtn:hover {
+    background: #0946ff;
+}
+
+.imgHotpointManage-title .addPointBtn {
+    background: #ffa407;
+    position: absolute;
+    left: 50%;
+    margin-left: -92px;
+    top: 5px;
+}
+
+.imgHotpointManage-title .addPointBtn:hover {
+    background: #FF9A09;
+}

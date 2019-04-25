@@ -1,0 +1,22 @@
+{
+  "name": "img-hotpoint-manage",
+  "version": "1.0.0",
+  "description": "img-hotpoint-manage",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "JSON2": "^0.1.0",
+    "boke-cms-ajax": "file:../../../modules/bokesoft.com/cms/boke-cms-ajax",
+    "boke-cms-upload": "file:../../../modules/bokesoft.com/cms/boke-cms-upload",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "busboy": "^0.2.14",
+    "webpack-dev-web-test": "file:../../../modules/supports/webpack-dev-web-test"
+  }
+}

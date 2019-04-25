@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: img-hotpoint-manage</title>
+</head>
+<body>
+<h1 class="imgHotpointManage-title">Test: img-hotpoint-manage</h1>
+<div class="container clearfix">
+    <div class="left">
+		<button class="testuploadBtn">上传</button>
+        <div class="imgHotpointManage-img"></div>
+    </div>
+    <div class="right">
+        <div class="imgHotpointManage-table">
+            <div class="imgPartsTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="width5">code<span>Key</span></th>
+                        <th class="width10">序号<span>Item</span></th>
+                        <th class="width15">物料码<span>Part No.</span></th>
+                        <th>名称<span>Description</span></th>
+                        <th class="width10">数量<span>Qty</span></th>
+                        <th class="width20">备注或适用车型<span>Remarks or Serial No.</span></th>
+                        <th class="width10">坐标<span>Position</span></th>
+                        <th class="width5">显示<span>Show</span></th>
+                        <th class="width8">操作<span>Options</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .left,
+    .right {
+        width: 50%;
+        float: left;
+    }
+
+    .imgHotpointManage-img {
+        width: 100%;
+        height: 800px;
+        position: relative;
+    }
+
+    .right .imgHotpointManage-table {
+        padding-left: 20px;
+    }
+
+</style>
+
+<script src="./test-bundle.js"></script>
+</body>
+</html>

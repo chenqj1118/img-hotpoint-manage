@@ -1,0 +1,22 @@
+<% if(items.length <= 0){ %>
+<tr class="emptyText">
+    <td colspan="5"><i>没有相关的信息</i></td>
+</tr>
+<% } else { %>
+
+<% _.each(items, function(item,idx){ %>
+<tr data-code="<%=item.idx%>">
+    <td><%= idx+1%><input type="hidden" name="isNewAdd" value="<%= item.isNewAdd%>"/></td>
+    <td><input type="text" class="partCode" name="partCode" value="<%= item.partCode%>"/></td>
+    <td><input type="text" name="partNo" value="<%= item.partNo||'新增'%>"/></td>
+    <td><input type="text" name="partName" value="<%= item.partName||'新增'%>"/></td>
+    <td><input type="number" name="partQty" value="<%= item.partQty||0%>"/></td>
+    <td><input type="text" name="partTip" value="<%= item.partTip||'新增'%>"/></td>
+    <td>
+        <input type="text" class="partPosition" name="partPosition" value="<%= item.partPosition%>" <% if(!item.show){%>disabled="true"<%}%>/>
+    </td>
+    <td><input type="checkbox" class="isShow" name="show" <% if(item.show){%> checked <%}%> /></td>
+    <td><button type="button" class="delBtn">删除</button></td>
+</tr>
+<% }); %>
+<% } %>
